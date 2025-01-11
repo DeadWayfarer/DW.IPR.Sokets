@@ -5,6 +5,14 @@ VisualStudioVersion = 17.8.34330.188
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DW.IPR.Sokets.TCPServer", "DW.IPR.Sokets.TCPServer\DW.IPR.Sokets.TCPServer.csproj", "{A603ADF8-3AE5-4187-B19E-EEB31E8D88DB}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TCP", "TCP", "{522AB3C5-0BA8-4452-AD0C-86B903AB456B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UDP", "UDP", "{66BB8CD1-C1FF-4CF2-9D4C-9108D70CFDF1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web", "Web", "{4E03707F-F274-467F-879B-8E2F4B2812D4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DW.IPR.Sokets.TCPClient", "DW.IPR.Sokets.TCPClient\DW.IPR.Sokets.TCPClient.csproj", "{53E541A0-B60B-4FFD-A7C4-77253460CEEE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,9 +23,17 @@ Global
 		{A603ADF8-3AE5-4187-B19E-EEB31E8D88DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A603ADF8-3AE5-4187-B19E-EEB31E8D88DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A603ADF8-3AE5-4187-B19E-EEB31E8D88DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53E541A0-B60B-4FFD-A7C4-77253460CEEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53E541A0-B60B-4FFD-A7C4-77253460CEEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53E541A0-B60B-4FFD-A7C4-77253460CEEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53E541A0-B60B-4FFD-A7C4-77253460CEEE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A603ADF8-3AE5-4187-B19E-EEB31E8D88DB} = {522AB3C5-0BA8-4452-AD0C-86B903AB456B}
+		{53E541A0-B60B-4FFD-A7C4-77253460CEEE} = {522AB3C5-0BA8-4452-AD0C-86B903AB456B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {24E866BA-C1E1-4404-A78F-7360E4C870E4}
