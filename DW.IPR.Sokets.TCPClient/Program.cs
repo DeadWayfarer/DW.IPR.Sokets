@@ -11,7 +11,7 @@ int port = 8888;
 
 // Даем команду на подключение
 Console.WriteLine("Нажмите любую кнопку чтобы подключиться к серверу...");
-Console.ReadKey();
+Console.ReadKey(true);
 
 // Создаем TCP-сокет и подключаемся к серверу
 TcpClient client = new TcpClient(serverIp, port);
@@ -23,7 +23,7 @@ NetworkStream stream = client.GetStream();
 // Отправка данных серверу
 string message = "Привет, сервер!";
 Console.WriteLine("Нажмите любую кнопку чтобы отправить сообщение серверу...");
-Console.ReadKey();
+Console.ReadKey(true);
 
 byte[] data = Encoding.UTF8.GetBytes(message);
 stream.Write(data, 0, data.Length);
@@ -38,4 +38,4 @@ Console.WriteLine("Получено от сервера: " + receivedMessage);
 // Закрываем соединение
 client.Close();
 
-Console.ReadKey();
+Console.ReadKey(true);

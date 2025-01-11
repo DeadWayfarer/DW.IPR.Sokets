@@ -37,4 +37,4 @@ Console.WriteLine("Ответ отправлен клиенту.");
 client.Close();
 listener.Stop();
 
-Console.ReadKey();
+Console.ReadKey(true);
